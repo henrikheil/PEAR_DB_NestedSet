@@ -1,0 +1,23 @@
+{
+    "name": "henrikheil/DB_NestedSet",
+    "type": "library",
+    "description": "Fork of PEAR DB_NestedSet",
+    "keywords": ["php", "pear"],
+    "homepage": "https://github.com/henrikheil/PEAR_DB_NestedSet",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Henrik Heil",
+            "email": "henrik.heil@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=4"   
+    },
+    "autoload": {    
+        "classmap": [
+            "DB/"
+        ]
+    }  
+}
