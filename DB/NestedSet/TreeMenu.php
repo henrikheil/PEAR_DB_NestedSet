@@ -15,7 +15,6 @@
 // | Authors: Jason Rust <jrust@rustyparts.com>                           |
 // +----------------------------------------------------------------------+
 // $Id: TreeMenu.php 204899 2006-01-10 08:41:13Z bate $
-require_once 'HTML/TreeMenu.php';
 // {{{ DB_NestedSet_TreeMenu:: class
 /**
  * A helper class to translate the data from a nested set table into a HTML_TreeMenu object
