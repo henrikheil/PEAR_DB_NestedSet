@@ -1,5 +1,5 @@
 {
-    "name": "henrikheil/DB_NestedSet",
+    "name": "henrikheil/PEAR_DB_NestedSet",
     "type": "library",
     "description": "Fork of PEAR DB_NestedSet",
     "keywords": ["php", "pear"],
