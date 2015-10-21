@@ -141,7 +141,7 @@ class DB_NestedSet_TreeMenu extends DB_NestedSet_Output {
             $params['structure'][$key]['hit'] = $node['hit'] = true;
 
             $tag = array('text' => $node[$params['textField']],
-                'link' => $node[$params['linkField']],
+                'link' => isset($node[$params['linkField']]) ? $node[$params['linkField']] : false,
                 'icon' => isset($node[$params['iconField']]) ? $node[$params['iconField']] : false,
                 'expandedIcon' => isset($node[$params['expandedIconField']]) ? $node[$params['expandedIconField']] : false,
                 'cssClass' => isset($node[$params['classField']]) ? $node[$params['classField']] : false,
