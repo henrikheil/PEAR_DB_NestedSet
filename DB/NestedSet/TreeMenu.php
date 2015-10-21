@@ -217,9 +217,9 @@ class DB_NestedSet_TreeMenu extends DB_NestedSet_Output {
      * @return string The HTML for the menu
      * @Author Emanuel Zueger
      */
-    function tree_toHTML() {
+    function tree_toHTML($isDynamic=true) {
         $options = $this->_getOptions('toHTML');
-        $tree = & new HTML_TreeMenu_DHTML($this->_structTreeMenu, $options);
+        $tree = & new HTML_TreeMenu_DHTML($this->_structTreeMenu, $options, $isDynamic);
         return $tree->toHTML();
     }
     // }}}
@@ -233,11 +233,11 @@ class DB_NestedSet_TreeMenu extends DB_NestedSet_Output {
      * @return string The HTML for the listbox
      * @author Emanuel Zueger
      */
-    function listbox_toHTML() {
+    function listbox_toHTML($elementID = null, $addHTML = null) {
         $options = $this->_getOptions('toHTML');
-        $listBox = & new HTML_TreeMenu_Listbox($this->_structTreeMenu, $options);
+        $listBox = & new HTML_TreeMenu_Listbox($this->_structTreeMenu, $options, $elementID, $addHTML);
         return $listBox->toHTML();
-    }
+    }    
     // }}}
     // {{{ _setParamDefaults()
     /**
